@@ -166,3 +166,36 @@ label {
     justify-content: center;
     margin-bottom: 10px;
 }
+
+#btn-guess {
+    width: 90px;
+    height: 40px;
+    background-color: #458728;
+    color: #FEFCD0;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid 1.5px black;
+    outline: none;
+}
+
+#input-guess {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #F9EEBD;
+    font-weight: bold;
+    border: solid 2px black;
+    outline: none;
+}
+
+.bouton-input-guess {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
