@@ -20,6 +20,7 @@ let resultEnd = document.querySelector('#result-end')
 let inputGuess = document.querySelector('#input-guess')
 let btnGuess = document.querySelector('#btn-guess')
 let preview = []
+let tableauEnter = []
 let nbError = 0;
 let value
 let doublon
@@ -108,6 +109,8 @@ function compar(){
             btnGuess.style.backgroundColor = "#fffef0";
             btnGuess.style.color = "#458728";
         }
+    } if(tableauEnter.includes(value)) {
+        alert("Tu l'as déjà mis couillon")
     } else if(nbError == 0) {
         tete.style.display = "flex";
         oeilG.style.display = "flex";
@@ -194,6 +197,7 @@ btn.addEventListener("click", ()=>{
         value = input.value.toLowerCase();
         doublon = checkDoublon(resultArray, value)
         compar()
+        tableauEnter.push(value)
     } else {
         alert("Merci mettre une lettre valide.")
     }
