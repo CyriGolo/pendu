@@ -109,7 +109,7 @@ function compar(){
             btnGuess.style.backgroundColor = "#fffef0";
             btnGuess.style.color = "#458728";
         }
-    } if(tableauEnter.includes(value)) {
+    } else if(tableauEnter.includes(value)) {
         alert("Tu l'as déjà mis couillon")
     } else if(nbError == 0) {
         tete.style.display = "flex";
@@ -240,6 +240,8 @@ btnGuess.addEventListener("click", ()=>{
             btn.style.backgroundColor = "#fffef0";
             btn.style.color = "#458728";
             result.textContent = word;
+        } else if(tableauEnter.includes(inputGuess.value)) {
+            alert("Tu l'as déjà mis couillon")
         } else if(nbError == 0) {
             tete.style.display = "flex";
             oeilG.style.display = "flex";
@@ -320,6 +322,7 @@ btnGuess.addEventListener("click", ()=>{
     } else {
         alert("Merci mettre un mot valide.")
     }
+    tableauEnter.push(inputGuess.value)
     inputGuess.value = "";
 })
 
