@@ -242,59 +242,6 @@ btnGuess.addEventListener("click", ()=>{
             result.textContent = word;
         } else if(tableauEnter.includes(inputGuess.value)) {
             alert("Tu l'as déjà mis couillon")
-        } else if(nbError == 0) {
-            tete.style.display = "flex";
-            oeilG.style.display = "flex";
-            oeilD.style.display = "flex";
-            boucheX.style.display = "flex";
-            body.style.backgroundColor = "#ffcbc0";
-            inputGuess.style.backgroundColor = "#fabe97";
-            btnGuess.style.backgroundColor = "#6a6c20";
-            btnGuess.style.color = "#cbcaa6";
-            input.style.backgroundColor = "#fabe97";
-            btn.style.backgroundColor = "#6a6c20";
-            btn.style.color = "#cbcaa6";
-            nbError = nbError + 1;
-        } else if(nbError == 1) {
-            corp.style.display = "flex";
-            body.style.backgroundColor = "#ffa299";
-            inputGuess.style.backgroundColor = "#fb9879";
-            btnGuess.style.backgroundColor = "#88561a";
-            btnGuess.style.color = "#a2a185";
-            input.style.backgroundColor = "#fb9879";
-            btn.style.backgroundColor = "#88561a";
-            btn.style.color = "#a2a185";
-            nbError = nbError + 1;
-        } else if(nbError == 2) {
-            brasG.style.display = "flex";
-            body.style.backgroundColor = "#ff7973";
-            inputGuess.style.backgroundColor = "#fc725a";
-            btnGuess.style.backgroundColor = "#a64113";
-            btnGuess.style.color = "#797963";
-            input.style.backgroundColor = "#fc725a";
-            btn.style.backgroundColor = "#a64113";
-            btn.style.color = "#797963";
-            nbError = nbError + 1;
-        } else if(nbError == 3) {
-            brasD.style.display = "flex";
-            body.style.backgroundColor = "#ff524d";
-            inputGuess.style.backgroundColor = "#fd4d3d";
-            btnGuess.style.backgroundColor = "#c32b0d";
-            btnGuess.style.color = "#525143";
-            input.style.backgroundColor = "#fd4d3d";
-            btn.style.backgroundColor = "#c32b0d";
-            btn.style.color = "#525143";
-            nbError = nbError + 1;
-        } else if(nbError == 4) {
-            jambeG.style.display = "flex";
-            body.style.backgroundColor = "#ff2927";
-            inputGuess.style.backgroundColor = "#fe261e";
-            btnGuess.style.backgroundColor = "#e11606";
-            btnGuess.style.color = "#292821";
-            input.style.backgroundColor = "#fe261e";
-            btn.style.backgroundColor = "#e11606";
-            btn.style.color = "#292821";
-            nbError = nbError + 1;
         } else {
             jambeD.style.display = "flex";
             resultEnd.textContent = "TU AS PERDU ..";
@@ -307,6 +254,12 @@ btnGuess.addEventListener("click", ()=>{
             oeilGx.style.display = "flex";
             oeilDx.style.display = "flex";
             boucheX.style.display = "flex";
+            tete.style.display = "flex";
+            corp.style.display = "flex";
+            brasG.style.display = "flex";
+            brasD.style.display = "flex";
+            jambeG.style.display = "flex";
+            jambeD.style.display = "flex";
             oeilG.style.display = "none";
             oeilD.style.display = "none";
             bouche.style.display = "none";
